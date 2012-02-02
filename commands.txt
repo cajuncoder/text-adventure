@@ -1,0 +1,11 @@
+Add repository:
+[1:33:01] Joel: git remote add joel git://github.com/griffy/text-adventure.git
+
+Download:
+[1:26:09] Joel: cd C:/RubyProjects/text-adventure
+[1:26:13] Joel: git pull joel master
+
+Upload:
+[1:36:31] Joel: git add README
+[1:36:42] Joel: git commit -m "update README.. again"
+[1:36:53] Joel: git push origin master
