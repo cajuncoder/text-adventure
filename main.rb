@@ -3,8 +3,7 @@ class User #The user is an object, containing data and functions.
   
   def initialize( name , x , y )
     @name = name
-    @x = x
-    @y = y
+    @x = x ; @y = y
     @item = ""
   end
   
@@ -27,7 +26,7 @@ class User #The user is an object, containing data and functions.
       puts "e"
       puts "w"
       puts "inv"
-      puts "pickup"
+      puts "take"
       puts "drop"
       puts "exit"
       @input = gets.chomp.upcase
@@ -44,9 +43,9 @@ class User #The user is an object, containing data and functions.
     elsif @input == "INV"
       puts @item
       gets
-    elsif @input == "PICKUP" and location[@x][@y].item != ""
+    elsif @input == "TAKE" and location[@x][@y].item != ""
       @item = location[@x][@y].item
-      puts "Picking up " + @item + "..."
+      puts "Taking up " + @item + "..."
       location[@x][@y].item = ""
   #    @input = gets.chomp.upcase
   #    action(@input, location)
